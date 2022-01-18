@@ -12,8 +12,7 @@ h1 {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 0);
-
-}
+	}
 p {
 	border: 1px solid black;
 	background-color: gray;
@@ -63,25 +62,8 @@ padding-top: 30px;
 #p3{
 padding-top: 30px;
 }
-/*medium devices only*/
-      @media (min-width: 768px) and (max-width: 991px) {
+      @media (max-width: 767px) {
       	p {
-      		float: left;
-
-      	}
-	#p1{ 
-	width: 300px;
-	
-
-}
-	#p2{ 
-	width: 300px;
-	
-
-}
-#p3 {
-	clear: left;
-	width: 620px
-
-}
+      
+      		width: 300px;
 }
