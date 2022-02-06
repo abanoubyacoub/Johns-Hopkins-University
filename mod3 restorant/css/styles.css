@@ -140,7 +140,35 @@ vertical-align: middle;
   color: #fff;
   opacity: .7;
 }
+   /* End Home pages */
 
+/* MENU Categories page */
+.Category-tile {
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;               /*make center any thing*/
+  height: 200px;             /*make center any thing*/
+  margin: 0 auto 15px auto; /*make center any thing*/
+}
+.Category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .7;
+}
+.Category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories + div { /* take care about +  */
+  margin-bottom: 50px;
+}
 
             /************ large devices only ************/
  @media (min-width: 1200px) {
@@ -246,7 +274,7 @@ vertical-align: middle;
     width: 50%;
    }
    /* End Footer */
-   
+
    /* home page */
    .container .jumbotron {
       margin-top: 30px;
