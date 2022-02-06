@@ -11,7 +11,7 @@ body {
 	border: 0;
 }
 #logo-img {
-	background: url(https://www.davidchuschinabistro.com/images/restaurant-logo_large.png)  no-repeat;
+	background: url('../images/logo_large.png')  no-repeat;
 	width: 150px;
 	height: 150px;
 	margin: 10px 15px 10px 0;
@@ -75,7 +75,36 @@ vertical-align: middle;
      margin-top: -30px;
   }
 /* End Header */
- 
+
+/********** footer ***********/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+} 
+.panel-footer div .row {
+  margin-bottom: 35px;
+ } 
+#hours, #adress {
+  line-height: 2;
+}
+#hours span, #adress span {
+  font-size: 1.3em;
+}
+#adress p {
+  color: #557c33;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/********** endfooter ***********/
 
 /* Home page 3tile */
 #menu-tile, #specials-tile, #map-tile {
@@ -204,7 +233,20 @@ vertical-align: middle;
 
    }
    /* End Header */
-
+   
+   /* Footer */
+   .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+   }
+   .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /*margin aready exists on whole row*/
+   }
+   .panel-footer section hr {
+    width: 50%;
+   }
+   /* End Footer */
+   
    /* home page */
    .container .jumbotron {
       margin-top: 30px;
@@ -220,7 +262,7 @@ vertical-align: middle;
         
 }
 
-/*********** suoer extra small devices only **************/
+/*********** super extra small devices only **************/
 @media (max-width: 479px) {
   /* header */
   .navbar-brand h1 { /* restaurant name */
