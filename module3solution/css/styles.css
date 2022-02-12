@@ -1,18 +1,68 @@
 body {
 	font-size: 16px;
-	color: #fff;
-	background-color: #61122f;
+	color: black;
+	background-color: white;
     font-family: 'Oxygen', sans-serif;
 }
       /**header**/
 #header-nav {
-	background-color: #f6b319;
+	background-color: lightblue;
 	border-radius: 0;
 	border: 0;
 }
-#logo-img {
-	background: url(http://localhost:3000/Downloads/html%20lessions%20/coursera%20/module3/images/restaurant-logo_large.png)  no-repeat;
-	width: 150px;
-	height: 150px;
-	margin: 10px 15px 10px 0;
+.navbar-brand {
+	padding-top: 20px;
+}
+.navbar-brand h1 {/*restaurant name*/
+font-family: 'Lora', serif;
+color: #557c3e;
+font-size: 1.8em;
+text-transform: uppercase;
+font-weight: bold;
+text-shadow: 1px 1px 1px #222;
+margin-top: 0;
+margin-bottom: 0;
+line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+ #nav-list {
+ 	margin-top: 5px;
+ }
+ #nav-list a {
+ 	color: darkgreen;
+  font-size: 20px;
+  font-family: solid ;
+ 	text-align: center;
+  margin: 5px 0 0 0;
+ }
+ #nav-list a:hover {
+ 	background: lightyellow;
+ }
+ #nav-list a span {
+ 	font-size: 1.8em;
+  margin-top: 0;
+  }
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+     border: 1px solid #557c3e;
+  }
+  .navbar-header button.navbar-toggle {
+     clear: both;
+     margin-top: -30px;
+  }
+/* End Header */
+/* home page  */
+.chicken-tile {
+  overflow: scroll;
+  border: 2px solid green;
+  padding: 10px 10px 10px 10px;
+  margin:  10px 10px 10px 10px;;
+}
+.chicken-tile div {
+  font-size: 25px;
+  padding: auto;
+  position: relative;
+  text-align: center;
+  margin: auto;
 }
