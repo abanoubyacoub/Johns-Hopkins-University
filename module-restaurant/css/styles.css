@@ -175,6 +175,7 @@ vertical-align: middle;
 /* Signal category page */
 .menu-item-tile {
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 .menu-item-tile hr {
   width: 80%;
@@ -190,7 +191,7 @@ vertical-align: middle;
 }
 .menu-item-photo {
   position: relative;
-  border: 2px solid #3f0c1f;
+  border: 5px solid #3f0c1f;
   overflow: hidden;
   padding: 0;
   margin-right: -15px;
@@ -205,6 +206,9 @@ vertical-align: middle;
   width: 80px;
   background-color: #557c3e;
   text-align: center;
+}
+.menu-item-photo:hover {
+  box-shadow:  0 1px 5px 1px yellow;
 }
 .menu-item-description {
   padding-right: 30px;
@@ -337,7 +341,7 @@ h3 .menu-item-tile {
         
 
 /*  Signal category page */
-.menu-item-photo {
+.menu-item-photo { /* to make photo in center with small screen */
   margin-right: auto;
   margin-left: auto;
 }
@@ -349,6 +353,7 @@ text-align: center;
 }
 /*  END Signal category page */
 }
+
 /*********** super extra small devices only **************/
 @media (max-width: 479px) {
   /* header */

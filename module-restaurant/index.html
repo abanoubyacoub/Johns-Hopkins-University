@@ -39,10 +39,16 @@
 		<div id="collapsable-nav" class="collapse navbar-collapse">
 			<ul id="nav-list" class="nav navbar-nav navbar-right">
 			 
-			  <li class="active">
+			 <li class="visible-xs active">
+			  <a href="index.html">
+			  	<span class="glyphicon glyphicon-home"></span> Home </a>
+			  </li>
+        
+        <li>
 			  <a href="menu-categories.html">
 			  	<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> menu </a>
 			  </li>
+
 			  <li>
 			  	<a href="#">
 			  		<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
@@ -78,111 +84,32 @@
 </div>
 <div id="xs-deliver" class="text-center visible-xs">*We deliver</div>
 
+                   <!-- main photo -->
+      <!----------------- jumbotron ------------------->
+<div id="main-content" class="container"><!-- just type div.container and tab bottom -->
+  <div class="jumbotron">
+  	<img src="images/jumbotron_768.jpg" alt="picture of restaurant" class="img-responsive visible-xs">
+  </div>	
 
-<div id="main-content" class="container">
-	<h2 id="menu-categories" class="text-center">Menu Categories</h2>
-	<div class="text-center">
-		Substituting white rice with brown rice or fried rice after 3:00pm will be 1.50 AEDfor a pint and 2.50AED for a quart.
-</div>
 
-<section class="row">
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/SR.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/B.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/CM.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/CU.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/D.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/DK.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/F.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/FR.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/NF.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/NL.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/PF.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-		<a href="single-category.html">
-			<div class="Category-tile">
-				<img width="200" height="200" src="images/SP.jpg" alt="lunch"><span>Lunch</span>
-			</div>
-		</a>
-	</div>
-</section>
-</div><!-------- End of #main-content -------->
+ <!-- 3 main titles -->
+  <div id="home-tile" class="row">
+  	<div class="col-md-4 col-sm-6 col-xs-12">
+  		<a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+  </div>
+  	<div class="col-md-4 col-sm-6 col-xs-12">
+  		<a href="single-categories.html"><div id="specials-tile"><span>specials</span></div></a>
+  	</div>
+  <div class="col-md-4 col-sm-12 col-xs-12">
+  	<a href="https://goo.gl/maps/HKCDhBBm5346RPvQ8" target="_blank">
+  		<div id="map-tile">
+  			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2106.0110295141703!2d54.35749354379332!3d24.487321546094606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67ae5b1a2eaf%3A0x3f6f86630fe4b60a!2z2YXYsdmD2LIg2KfZhNiq2KzYp9ix2Kkg2KfZhNi52KfZhNmF2Yog2YXZiNmEINmB2YjYryDZg9mI2LHYqg!5e0!3m2!1sar!2sae!4v1644069085788!5m2!1sar!2sae" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  			<span>map</span>
+  		</div>
+  	</a>
+    </div>
+  </div><!-- End of #home-tiles -->
+</div><!-- End of #main-content -->
 
 <!------------- Footer ------------->
 <footer class="panel-footer">
