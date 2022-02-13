@@ -53,6 +53,11 @@ line-height: .75;
   }
 /* End Header */
 /* home page  */
+#menu {
+    font-size: 35px;
+    color: black;
+    text-align: center;
+}
 .chicken-tile {
   overflow: scroll;
   border: 2px solid green;
@@ -62,7 +67,6 @@ line-height: .75;
 .chicken-tile div {
   font-size: 25px;
   padding: auto;
-  position: relative;
   text-align: center;
   margin: auto;
 }
