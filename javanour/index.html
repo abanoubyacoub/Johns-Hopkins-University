@@ -11,12 +11,12 @@
 
 <!-- or typing direct like that -->
 <script type="text/javascript"> /*can type jave here */
-  console.log(hi);     	
+      	
 </script>
 </head>
 <body dir="rtl">
 	<div id="container">
-		<p id="uptitle">الحالة</p>
+		<p id="title">الحالة</p>
 		<button id="btn" type="button">اضغط هنا يا جميل</button>
 		<ul id="menu">
 			<li>ياصباح الفل عليك</li>
@@ -30,12 +30,13 @@
 
 <!-- we can type java codes in head and body also -->
 <script type="text/javascript">
-	console.log("right before body closing tag") 
+	 
 </script>
 <!-- u can type java codes as link like that  -->
 <script src="js/script.js"></script>
  </body>
 	</html>
+
 java inside console
 3+5
 5*4
@@ -43,5 +44,26 @@ window
 window.document <!-- this way for java to work and select element .element etc -->
 document.title
 'javanour'result
+
 document.title = "java script nour"  *to change
-document.getElementById ("uptitle")  *to change by id
+
+document.getElementById ("uptitle")  *to reach
+
+document.getElementById("uptitle").innerHTML="status"  *to change by id
+
+var mytitle = document.getElementById("title")  *to make dir title reachable
+
+myTitle.innerHTML = "new status"  * after making title to head my title
+
+var menu = document.getElementByClassName('menu') 
+
+var menuItem = document.getElementById("menu");document.getElementsByTagName("li");
+or
+var menuItem =document.getElementsByTagName("li");  
+  **to make var for li many item 
+
+*menuItem in console to check if var working or not
+* to select one from array inside console    menuItem[0]
+
+* menuItem[2].innerHTML= "عنوانى " * to change one element from array 
+
