@@ -3,7 +3,7 @@
 	margin: 0 auto;
 	text-align: center;
 }
-#title {
+#uptitle {
 	font-size: 28px;
 }
 #btn {
@@ -41,5 +41,5 @@ li:hover {
 	transition-duration: 0.2s;
 }
 .selected {
-	background-color: #99ffaa;
+	background-color: red;
 }

@@ -1,5 +1,9 @@
 var menuItem =document.getElementsByTagName("li");
-var status =document.getElementById("title");
+var upstatus =document.getElementById("uptitle");
+var btn =document.getElementById("btn");
+var myMenu = document.getElementById("menu");
+var counter = 1;
+
 // menuItem[0].innerHTML = "Hello world ";
 // menuItem[1].innerHTML = "عزيز وغالي ";
 // menuItem[2].innerHTML = "عزيز وغالي ";
@@ -14,10 +18,24 @@ var status =document.getElementById("title");
 
 for (var x = 0; x < menuItem.length; x++) {
 	menuItem[x].addEventListener("click", showItem);
-}
+};
 
 function showItem(){
-	alert("اهلا بيك ")
-	status="hello World"
-}
+	// upstatus.innerHTML = "hello World"
+	alert(" تسلم ايديك ")
+	upstatus.innerHTML = this.innerHTML;
+    this.classlist.add("selected");
+};
 
+
+btn.addEventListener("click", newItem);
+
+function newItem (){
+// upstatus.innerHTML = "Hello world"
+// menuItem[0].innerHTML = "java"
+alert("متضغطش اوي كده")
+btn.innerHTML = "اضغط كمان عاوز اتوب"
+// myMenu.innerHTML = "new row"
+ myMenu.innerHTML += "<li> new line "+counter+"</li>" /*one dis befor close " onle can make dis*/
+ counter++
+};
