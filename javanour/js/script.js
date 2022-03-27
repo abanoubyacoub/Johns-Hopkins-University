@@ -10,7 +10,7 @@ var counter = 1;
 // menuItem[3].innerHTML = "عزيز وغالي ";
 // menuItem[4].innerHTML = "عزيز وغالي ";
 
-/*to replace typing 4 line to one line */
+/* to replace typing 4 line to one line */
 
 // for (var x = 0; x < menuItem.length; x++) {
 // 	menuItem[x].innerHTML = "Hello world";
