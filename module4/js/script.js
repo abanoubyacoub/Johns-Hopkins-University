@@ -498,15 +498,33 @@ console.log(doubleAll2(10));
 var name2 = "yacoub";
 function sayHello () {
 	console.log("Hello " + name2 );
-}
+};
 /**/
 var yacoubGreeter = {};
 yacoubGreeter.name2 = "yacoub";
 yacoubGreeter.sayHello = function () {
 	console.log("Hello " + yacoubGreeter.name2);
-}
+};
+/**/
+// var yacoubGreeter = {};
+// yacoubGreeter.name2 = "yacoub";
+// var greeting = "hello ";
+// yacoubGreeter.sayHello = function () {
+// 	console.log(greeting + yacoubGreeter.name2);
+// }
 /***************************************************/
+//  immediately invoked function Expression by (...())
+//  IIFEs
+(function (window) {
+	var yacoubGreeter = {};
+  yacoubGreeter.name2 = "yacoub";
+  var greeting = "hello ";
+  yacoubGreeter.sayHello = function () {
+	console.log(greeting + yacoubGreeter.name2);
+}
+window.yacoubGreeter = yacoubGreeter;
 
+})(window);
 
 
 
