@@ -7,7 +7,7 @@ function sayHi () {
 	to solve it make space */
 }
 /**/
-// var ibrahimGreeter = {};
+// var ibrahimGreeter = {}; // fake name spaces
 // ibrahimGreeter.name2 = "Ibrahim";
 // var greeting = "hi";
 // ibrahimGreeter.sayHi = function  () {
@@ -19,7 +19,7 @@ function sayHi () {
 //  IIFEs
  (function (window) {
  var ibrahimGreeter = {};
-ibrahimGreeter.name2 = "Ibrahim";
+ibrahimGreeter.name2 = " Ibrahim";
 var greeting = "hi";
 ibrahimGreeter.sayHi = function  () {
 	console.log(greeting + ibrahimGreeter.name2); /* will be over write yacoub 

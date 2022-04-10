@@ -520,7 +520,7 @@ yacoubGreeter.sayHello = function () {
   yacoubGreeter.name2 = "yacoub";
   var greeting = "hello ";
   yacoubGreeter.sayHello = function () {
-	console.log(greeting + yacoubGreeter.name2);
+	console.log(greeting  + yacoubGreeter.name2);
 }
 window.yacoubGreeter = yacoubGreeter;
 
