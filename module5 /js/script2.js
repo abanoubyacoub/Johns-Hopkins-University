@@ -1,8 +1,10 @@
 // DOM manipulation
-document.getElementById('title');
+/*document.getElementById('title');*/
 console.log(document.getElementById('title'));
 
 console.log(document instanceof HTMLDocument);
+
+/***********/
 // DOM manipulation lecture 53 part 2 
 
 // function sayHello () {
@@ -44,7 +46,9 @@ function sayHello () {
 	title += " & Lovin It!";
 	}
 }
+// lec 54
 
+// 55
 
 
 
