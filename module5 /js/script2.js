@@ -2,24 +2,18 @@
 /*document.getElementById('title');*/
 console.log(document.getElementById('title'));
 
-console.log(document instanceof HTMLDocument);
+console.log(document instanceof HTMLDocument); /*instance of = status*/
 
-/***********/
-// DOM manipulation lecture 53 part 2 
+// lec 53/2
 
-// function sayHello () {
-// 	// console.log(
-// 	// 	document.getElementById("name").value
-// 	// 	);
-// 	var name = 
-// 	document.getElementById("name").value;
-// 	var message = "<h2>hello " + name + "!</h2>";  /** h2 just text **/ 
+document.addEventListener("DOMContentLoaded",
+	function (event) {
 
-// 	document.getElementById("content").textContent = message;
-// }
 
-function sayHello () {
-	// console.log(
+function sayHello (event) {
+	// console.log(this);
+	/* or */
+	// this.textContent = "Said it!"; /* once u  click inside box */
 	// 	document.getElementById("name").value
 	// 	);
 	var name = 
@@ -27,16 +21,15 @@ function sayHello () {
 	var message = "<h2>hello " + name + "!</h2>";  /** h2 not text now bcoz innerHTML **/ 
 
 	document
-	.getElementById("content")
+	.getElementById("content") /*relatead by div in html page */
 	.innerHTML = message;
 
-/********/
 
 	if (name === "abanoub") {
 		var title = 
 		// document.getElementById("title")
 		document
-		.querySelector("#title")
+		.querySelector("#title") /* css title */
 		.textContent;
 	title += "& I LOVE YOU ";
 
@@ -46,11 +39,26 @@ function sayHello () {
 	title += " & Lovin It!";
 	}
 }
-// lec 54
 
-// 55
+ // lec 54
+ /* unobstrusive event binding */
+ // document.querySelector("button")
+ // addEventListener("click" , sayHello);
 
-
+/* or */
+ document.querySelector("button")
+ .onclick = sayHello;
+// 55 mozurilla 
+document.querySelector("body")
+.addEventListener("mousemove",
+	function (event) {
+		if (event.shiftkey === true ) {
+	    console.log("x: " + event.clintX);
+		console.log("Y: "+ event.clintY);
+		}
+	}
+	);
+});
 
 
 
